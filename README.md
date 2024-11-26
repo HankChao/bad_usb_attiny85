@@ -18,7 +18,9 @@ Using attiny85 usb to simulate keyboard input.And using hot key to open cmd and 
 
 ### 2.下載Attiny85驅動程式
 我是參考此篇[github](https://github.com/MTK911/Attiny85?tab=readme-ov-file)做的，但有些東西因更新已經不適用了。不過驅動程式這塊倒是正常。
+
 [驅動程式教學](https://maker.pro/arduino/projects/how-to-build-a-rubber-ducky-usb-with-arduino-using-a-digispark-module)
+
 [驅動程式安裝包(雲端備份)](https://drive.google.com/drive/folders/1F5WSncNgPM-GISmHQYXSQY5sP7w13X-U?usp=sharing)
 
 解壓縮後，根據自己電腦不同執行不同執行檔安裝(身為win11筆電用戶的我使用 DPinst64.exe)
@@ -26,9 +28,11 @@ Using attiny85 usb to simulate keyboard input.And using hot key to open cmd and 
 安裝好後前往工作管理員，插上attiny85檢查是否能夠成功讀取
 
 ### 3.Arduino擴充包
-在Arduino IDE中，很多教學都是說打開檔案->偏好設定->在額外的開發版管理員網址中打上:http://digistump.com/package_digistump_index.json 。但我在做的時候發現他是壞的，根本連不上。
+在Arduino IDE中，很多教學都是說打開檔案->偏好設定->在額外的開發版管理員網址中打上:http://digistump.com/package_digistump_index.json 。
+但我在做的時候發現他是壞的，根本連不上。
 
-在我翻了他們官方的github後，發現有更新，而更新的網址是: https://raw.githubusercontent.com/ArminJo/DigistumpArduino/master/package_digistump_index.json ，打好後點擊確認
+在我翻了他們官方的github後，發現有更新，而更新的網址是: https://raw.githubusercontent.com/ArminJo/DigistumpArduino/master/package_digistump_index.json ，
+打好後點擊確認
 
 接著前往工具->開發版->開發版管理員，搜尋**Digistump AVR Boards**套件進行安裝，安裝完成後，就可以開始設計attiny85的程式啦!!
 
